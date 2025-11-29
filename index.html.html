@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .reveal .slides {
+            text-align: left;
+        }
+        .reveal .slides section {
+            padding: 20px;
+        }
+        .email-footer {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.6em;
+            color: #888;
+        }
+        .financial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .metric {
+            font-size: 2em;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .formula {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Title Slide -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance Overview</h3>
+                <p>Presented by: Technical Consulting Team</p>
+                <p style="font-size: 0.8em; margin-top: 50px;">24f3003595@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll review our financial performance, key metrics, and strategic initiatives. The presentation will take approximately 20 minutes.
+                </aside>
+            </section>
+
+            <!-- Slide 2: Executive Summary -->
+            <section data-auto-animate>
+                <h2>Executive Summary</h2>
+                <div class="financial-card fragment">
+                    <p><strong>Total Revenue:</strong> <span class="metric">$2.4B</span></p>
+                    <p>↑ 18% YoY</p>
+                </div>
+                <div class="financial-card fragment">
+                    <p><strong>Net Income:</strong> <span class="metric">$456M</span></p>
+                    <p>↑ 22% YoY</p>
+                </div>
+                <div class="financial-card fragment">
+                    <p><strong>EPS:</strong> <span class="metric">$3.85</span></p>
+                    <p>Beat estimates by $0.32</p>
+                </div>
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    Our Q4 results exceeded expectations across all key metrics. Revenue growth was driven by strong performance in our digital banking division and increased client acquisition. We'll dive into each metric in detail.
+                </aside>
+            </section>
+
+            <!-- Slide 3: Markdown Slide -->
+            <section data-markdown data-auto-animate>
+                <textarea data-template>
+                    ## Key Achievements (Markdown)
+                    
+                    ### Strategic Milestones
+                    
+                    - **Digital Transformation**: Launched new mobile banking platform
+                        - 2M+ downloads in first quarter
+                        - 4.8★ average rating
+                    
+                    - **Market Expansion**: Entered 3 new international markets
+                        - Asia-Pacific operations grew 45%
+                        - European division up 28%
+                    
+                    - **Customer Satisfaction**: NPS score improved to 72
+                        - Industry leading retention rate of 94%
+                    
+                    ---
+                    
+                    *Strategic initiatives continue to drive sustainable growth*
+                </textarea>
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    Our strategic initiatives have paid off significantly. The mobile platform launch was our biggest success, with adoption rates exceeding projections by 40%. International expansion is ahead of schedule.
+                </aside>
+            </section>
+
+            <!-- Slide 4: Financial Formulas -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                
+                <div class="formula fragment">
+                    <h4>Return on Equity (ROE)</h4>
+                    <p style="font-size: 1.2em;">$$ROE = \frac{Net\ Income}{Shareholder\ Equity} = \frac{456M}{2.8B} = 16.3\%$$</p>
+                </div>
+                
+                <div class="formula fragment">
+                    <h4>Earnings Per Share (EPS)</h4>
+                    <p style="font-size: 1.2em;">$$EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Average\ Shares} = \frac{456M}{118.4M} = \$3.85$$</p>
+                </div>
+                
+                <div class="formula fragment">
+                    <h4>Price to Earnings Ratio (P/E)</h4>
+                    <p style="font-size: 1.2em;">$$P/E\ Ratio = \frac{Market\ Price\ Per\ Share}{EPS} = \frac{65.20}{3.85} = 16.9x$$</p>
+                </div>
+                
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    These core financial ratios demonstrate strong financial health. Our ROE of 16.3% exceeds the industry average of 12%. The P/E ratio indicates fair valuation with room for growth.
+                </aside>
+            </section>
+
+            <!-- Slide 5: Code Sample - Data Processing -->
+            <section>
+                <h2>Revenue Analytics Pipeline</h2>
+                <pre><code class="language-python" data-line-numbers="1-3|5-9|11-15">
+# Q4 Revenue Analysis System
+import pandas as pd
+import numpy as np
+
+def calculate_growth_metrics(current_q, previous_q):
+    """Calculate quarterly growth metrics"""
+    revenue_growth = ((current_q - previous_q) / previous_q) * 100
+    return round(revenue_growth, 2)
+
+# Q4 2024 Data Processing
+q4_revenue = 2.4e9  # $2.4B
+q3_revenue = 2.1e9  # $2.1B
+
+growth_rate = calculate_growth_metrics(q4_revenue, q3_revenue)
+print(f"Q4 Growth Rate: {growth_rate}%")  # Output: 14.29%
+                </code></pre>
+                <p class="fragment" style="margin-top: 20px;">Result: <span style="color: #4CAF50; font-weight: bold;">14.29% sequential growth</span></p>
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    This Python code demonstrates our automated revenue analysis system. We use this pipeline to process financial data in real-time, enabling faster decision-making and more accurate forecasting.
+                </aside>
+            </section>
+
+            <!-- Slide 6: More Code - Risk Assessment -->
+            <section>
+                <h2>Risk Assessment Algorithm</h2>
+                <pre><code class="language-javascript" data-line-numbers="1-2|4-8|10-14">
+// Portfolio Risk Calculator
+const portfolioData = { assets: 4.2e9, liabilities: 1.8e9 };
+
+function calculateRiskMetrics(portfolio) {
+    const debtToAsset = portfolio.liabilities / portfolio.assets;
+    const riskLevel = debtToAsset < 0.5 ? 'Low' : 'Moderate';
+    return { ratio: debtToAsset.toFixed(2), level: riskLevel };
+}
+
+// Real-time Risk Assessment
+const metrics = calculateRiskMetrics(portfolioData);
+console.log(`Debt-to-Asset Ratio: ${metrics.ratio}`);  
+// Output: 0.43 (Low Risk)
+console.log(`Risk Level: ${metrics.level}`);
+                </code></pre>
+                <p class="fragment" style="margin-top: 20px;">Assessment: <span style="color: #4CAF50; font-weight: bold;">Low Risk Profile (0.43 ratio)</span></p>
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    Our risk management system continuously monitors portfolio health. The current debt-to-asset ratio of 0.43 indicates a strong balance sheet with ample capacity for strategic investments.
+                </aside>
+            </section>
+
+            <!-- Slide 7: Outlook and Strategy -->
+            <section data-auto-animate>
+                <h2>2025 Outlook</h2>
+                <div class="fragment">
+                    <h3>Revenue Targets</h3>
+                    <p>Projected Annual Revenue: <span class="metric">$10.2B</span></p>
+                    <p style="font-size: 0.8em;">15% growth target for FY 2025</p>
+                </div>
+                <div class="fragment" style="margin-top: 30px;">
+                    <h3>Strategic Priorities</h3>
+                    <ul>
+                        <li>AI-powered financial advisory platform launch</li>
+                        <li>Expansion into sustainable finance products</li>
+                        <li>Enhanced cybersecurity infrastructure</li>
+                        <li>Continued digital transformation initiatives</li>
+                    </ul>
+                </div>
+                <div class="email-footer">24f3003595@ds.study.iitm.ac.in</div>
+                <aside class="notes">
+                    Looking ahead to 2025, we're confident in our growth trajectory. The AI advisory platform represents a $50M investment that we expect to generate $200M in new revenue streams within 18 months.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Thank You -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <br><br>
+                <p><strong>Contact:</strong> 24f3003595@ds.study.iitm.ac.in</p>
+                <p style="font-size: 0.8em; margin-top: 50px;">This presentation contains forward-looking statements. Actual results may differ materially.</p>
+                <aside class="notes">
+                    Thank you for your attention. I'm now happy to take questions on any aspect of our Q4 performance or 2025 outlook. We have additional materials available for detailed analysis.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+    
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            math: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full',
+            }
+        });
+    </script>
+</body>
+</html>
